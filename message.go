@@ -35,6 +35,8 @@ type Notification struct {
 	BodyLocArgs  string `json:"body_loc_args,omitempty"`
 	TitleLocKey  string `json:"title_loc_key,omitempty"`
 	TitleLocArgs string `json:"title_loc_args,omitempty"`
+	Vibrate      int    `json:"vibrate,omitempty"`
+	MessageID    string `json:"message_id,omitempty"`
 }
 
 // Message represents list of targets, options, and payload for HTTP JSON
